@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+    <body>
+        <script type = "text/javascript">
+            function Somax(){
+                var n1 = document.getElementById("n1").value;
+                var n2 = document.getElementById("n2").value;
+                        n1 = eval(n1);
+                        n2 = eval(n2);
+                var soma = (n1+n2);
+                alert(soma);
+            }
+        </script>
+                <fieldset>
+                    <legend>Cálculo Soma N1 e N2 </legend>
+
+                    <label>Valor 1:</label>
+                    <input id = "n1" type = "text"/>
+
+                    <label>Valor 2:</label>
+                    <input id = "n2" type = "text"/>
+
+                    <button id = "somar" onclick = "Somax()">Somar</button>
+                </fieldset>
+    </body>
+</html>
