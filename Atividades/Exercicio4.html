@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador</title>
+</head>
+<body>
+
+    <fieldset>
+        <button id="somar" onclick="contar()">Contar</button>
+    </fieldset>
+
+    <div id="resultado"></div>
+
+    <script>
+        function contar() {
+            let resultado = document.getElementById("resultado");
+            resultado.innerHTML = "";
+
+            for (let i = 0; i <= 100; i++) {
+                resultado.innerHTML += i + "<br>";
+            }
+        }
+    </script>
+
+</body>
+</html>

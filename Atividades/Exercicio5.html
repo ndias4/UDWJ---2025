@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Criptomoeda</title>
+</head>
+<body>
+
+    <script>
+        function converterParaBitcoin() {
+            const reais = parseFloat(document.getElementById("valorReais").value);
+
+            const valorBitcoin = 350000;
+
+            const btc = reais / valorBitcoin;
+
+            document.getElementById("resultado").innerHTML = 
+                `R$ ${reais.toFixed(2)} equivalem a ${btc.toFixed(6)} BTC`;
+        }
+    </script>
+
+        <input type="number" id="valorReais" placeholder="Digite o valor em R$">
+        <button onclick="converterParaBitcoin()">Converter para Criptomoeda</button>
+        <div id="resultado"></div>
+
+</body>
+</html>
